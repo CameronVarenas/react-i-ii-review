@@ -4,9 +4,18 @@ Answer these on your own, then compare answers as a group
 
 1.  What is state?
 
+  // state is an object that uses key / value pairs. 
+  // is used to store data that is specific to a component.
+  // is data that is managed by the component
+
 2.  Where do you set initial state?
 
+  // initial state is set under super() within the constructor of a class of a component
+
 3.  What method do you use to update state?
+
+  // we can use the .setState() method
+  // when we call the setState method, we need to send in an object that specifies our targeted properties that need changed along with their new values.
 
 ### Understand
 
@@ -40,6 +49,11 @@ class LeadMentor extends Component {
   }
 }
 ```
+
+  // this code is creating a component called LeadMentor.
+  // LeadMentor is displaying the questionsAnswered from its state in its return.
+  // the user is able to increase the amount of questionsAnswered help in state by invoking the handleClick method.
+  // when the state value for questionsAnswered gets updated by buttonClick, the component re-renders showing the updated number.
 
 ### Apply
 
